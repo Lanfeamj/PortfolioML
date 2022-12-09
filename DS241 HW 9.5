@@ -1,0 +1,9 @@
+library(tidyverse)
+library(rmarkdown)
+library(here)
+library(starwarsdb)
+
+ggplot(starwars, aes(x = height, y = mass))+
+  geom_point() +
+  labs(title = "Mass vs Height of Star Wars Characters", 
+       x = "Height(cm)", y = "Weight(kg)")
