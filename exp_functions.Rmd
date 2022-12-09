@@ -1,0 +1,72 @@
+---
+title: "exp_functions"
+author: "Michael Lanfear"
+date: '2022-10-28'
+output: html_document
+---
+
+#libraries
+```{r}
+library(tidyverse)
+```
+
+##functions
+```{r}
+f01=function(x){
+  y=x+1
+  y^2
+}
+
+  f01(3)
+  f01(5)
+```
+```{r}
+f02=function(x,a){
+  y=x+1+a
+  y^2
+}
+
+  f02(3,2)
+  f02(5,1)
+```
+```{r}
+a=2
+f03=function(x){
+  y=x+1+a
+  y^2
+}
+
+  f03(3)
+  f03(5)
+```
+
+```{r}
+a=3
+  f03(3)
+  
+a=4
+  f03(5)
+```
+
+```{r}
+f04=function(x=5,a=1){
+  y=x+1+2*a
+  y^2
+}
+
+  f04(3)
+  f04(a=0)
+  f04(5,2)
+  f04()
+```
+
+```{r}
+a=2
+f03=function(x){
+  y=x+1+a
+  y^2
+}
+
+  f03(3)
+  f03(5)
+```
